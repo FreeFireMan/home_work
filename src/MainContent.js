@@ -1,14 +1,16 @@
 import React from 'react'
 import CardHolder from "./CardHolder";
 import data_prod from './Data'
+import CreateCard from "./CreateCard";
 class MaineContent extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             data: [...data_prod]
         }
-        this.hideData = this.hideData.bind(this)
-        this.deleteData = this.deleteData.bind(this)
+        this.hideData = this.hideData.bind(this);
+        this.deleteData = this.deleteData.bind(this);
+        this.setData = this.setData.bind(this);
     }
 
     hideData = e => {
@@ -29,6 +31,11 @@ class MaineContent extends React.Component {
              ),
          }))
     }
+    setData =e=>{
+       this.setState(prevState=>({
+           data: [...prevState.data,e]
+       }))
+    }
 
     render() {
         console.log("I render ",this.state.data)
@@ -36,7 +43,9 @@ class MaineContent extends React.Component {
             <div className="row">
                 { this.state.data.map(items =>
                     <CardHolder key={items.id} {...items} hideData={this.hideData} deleteData={this.deleteData}/> ) }
+                <CreateCard setData={this.setData}/>
             </div>
+
         )
     }
 }

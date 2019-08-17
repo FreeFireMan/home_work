@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import MaineContent from "./MainContent";
 
+
 class App extends React.Component {
 
 
@@ -9,6 +10,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <MaineContent/>
+
             </div>
         );
     }

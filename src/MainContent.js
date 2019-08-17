@@ -7,21 +7,35 @@ class MaineContent extends React.Component {
         this.state = {
             data: [...data_prod]
         }
-        this.updateData = this.updateData.bind(this)
+        this.hideData = this.hideData.bind(this)
+        this.deleteData = this.deleteData.bind(this)
     }
-    updateData = e => {
-        const val = e;
-        console.log("I work ",val)
+
+    hideData = e => {
+
         this.setState(pevState => ({
-            data : pevState.data.map( t=>(
-                t.id === val && t.hasImage ? !t.hasImage : t  ))
-        }))
+            data: pevState.data.map(t => {
+                const tCopy = {...t};
+                tCopy.hasImage = tCopy.id === e ? !tCopy.hasImage : tCopy.hasImage
+                return tCopy
+
+            })
+    }))
     }
+    deleteData = e => {
+         this.setState(prevState =>({
+             data: prevState.data.filter(t=>
+                 t.id !== e.toString()
+             ),
+         }))
+    }
+
     render() {
+        console.log("I render ",this.state.data)
         return (
             <div className="row">
                 { this.state.data.map(items =>
-                    <CardHolder key={items.id} {...items} updateData={this.updateData}/> ) }
+                    <CardHolder key={items.id} {...items} hideData={this.hideData} deleteData={this.deleteData}/> ) }
             </div>
         )
     }

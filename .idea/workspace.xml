@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3cc6856-791a-494f-8abd-b3faff057444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CardHolder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardHolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardHolder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainContent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +78,16 @@
       <option name="presentableId" value="Default" />
       <updated>1566028281842</updated>
       <workItem from="1566028283606" duration="9210000" />
-      <workItem from="1566050359522" duration="8743000" />
+      <workItem from="1566050359522" duration="14842000" />
     </task>
+    <task id="LOCAL-00001" summary="home work">
+      <created>1566064692691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566064692691</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="home work" />
+    <option name="LAST_COMMIT_MESSAGE" value="home work" />
   </component>
 </project>

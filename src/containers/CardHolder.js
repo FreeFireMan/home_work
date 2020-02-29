@@ -14,7 +14,8 @@ const CardHolder = ({id,baseImage,partNumber,article,hideData,hasImage,deleteDat
                 </div>
                 }
                      <button className="btn btn-primary mb-1" onClick= {hideData.bind(null,id)} >Hide content</button>
-                    <button className="btn btn-primary" onClick={deleteData.bind(null,id)}>Delete</button>
+                    <button className="btn btn-primary mb-1" onClick={deleteData.bind(null,id)}>Delete</button>
+                    <button className="btn btn-primary" onClick={deleteData.bind(null,id)}>Toggle</button>
 
             </div>
         )

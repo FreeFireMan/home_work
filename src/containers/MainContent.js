@@ -8,9 +8,7 @@ class MaineContent extends React.Component {
         this.state = {
             data: [...data_prod]
         }
-        this.hideData = this.hideData.bind(this);
-        this.deleteData = this.deleteData.bind(this);
-        this.setData = this.setData.bind(this);
+
     }
 
     hideData = e => {

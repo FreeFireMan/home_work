@@ -10,9 +10,6 @@ class CreateCard extends React.Component{
             id : '',
             hasImage : true
         }
-        this.handleClick = this.handleClick.bind(this)
-        this.updateInput = this.updateInput.bind(this)
-
     }
     handleClick = e =>{
         this.props.setData(this.state)
@@ -25,7 +22,6 @@ class CreateCard extends React.Component{
     render() {
         return(
             <div className="card m-1 p-1" style={{width: "260px"}}>
-
                 <div className="card-body">
                     <label>Линк на фото<input type="text" name="baseImage" onChange={this.updateInput.bind(this)}/></label>
                     <label>Код производителя<input type="text" name="partNumber" onChange={this.updateInput.bind(this)}/></label>
